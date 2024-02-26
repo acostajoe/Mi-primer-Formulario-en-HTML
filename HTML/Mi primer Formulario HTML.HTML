@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer Formulario</title>
+    
+</head>
+<body>
+<h2> D'Andy BarberShop</h2>
+<form action="/agendar.cita" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="telefono">Telefono</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+   
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="barbero">Seleccionar Barbero:</label>
+    <select id="Barbero" name="barbero" required>
+        <option value="ANDY">Andy</option>
+        <option value="RANDY">Randy</option>
+        <option value="JUNIOR">Junior</option>
+    </select>
+
+    <input type="submit" value="Agendar Cita">
+
+</form>
+<footer>
+    <p>
+        &copy;2024 Mi Primer Formulario
+    </p>
+</footer>
+</body>
+</body>
+</html>
